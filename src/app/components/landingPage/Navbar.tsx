@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
+import SignInButton from './SignInButton'
 
 function Navbar() {
   return (
@@ -15,9 +16,7 @@ function Navbar() {
           <span>pricing</span>
           <span>integrations</span>
         </span>
-        <button className='bg-white text-[#7551dc] px-4 py-1 rounded-2xl shadow-md hover:shadow-none'>
-          Login
-        </button>
+        <SignInButton/>
       </div>
     </>
   )
