@@ -14,7 +14,7 @@ function Hero() {
                     </span>
                     <button className='px-5 w-3/6 hover:bg-[#7551dc] hover:text-white rounded-2xl py-3 border-2 border-[#7551dc] flex items-center justify-center space-x-3'>
                         <FaCirclePlay size={20}/>
-                        <span>See It How Works</span>
+                        <span>See How It Works</span>
                     </button>
                 </div>
                 <div className='w-3/6 flex items-center justify-center'>
