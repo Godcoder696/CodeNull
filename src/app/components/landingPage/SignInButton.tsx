@@ -1,5 +1,6 @@
 'use client'
-import { signIn, useSession } from 'next-auth/react'
+import { signIn, signOut, useSession } from 'next-auth/react'
+import Link from 'next/link';
 import React from 'react'
 
 function SignInButton() {
@@ -7,9 +8,21 @@ function SignInButton() {
   if(session && session.user){
     return (
       <>
-        <button className='bg-white text-[#7551dc] px-4 py-1 rounded-2xl shadow-md hover:shadow-none'>
-          {session.user.name}
-        </button>  
+        <div className='flex space-x-2'>
+          <Link href="/projects">
+            <button
+              className='bg-white text-[#7551dc] px-4 py-1 rounded-2xl shadow-md hover:shadow-none'
+            >
+              Projects
+            </button> 
+          </Link> 
+          <button 
+            className='bg-white text-[#7551dc] px-4 py-1 rounded-2xl shadow-md hover:shadow-none'
+            onClick={()=>{signOut()}}
+            >
+            Sign Out
+          </button>
+        </div>
       </>
     )
   }
