@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     images:{
-        domains: ['rive.app']
+        domains: ['rive.app','cdn.pixabay.com']
     }
 };
 
