@@ -1,32 +1,17 @@
-import Image from 'next/image'
-import Link from 'next/link'
-import React from 'react'
-import { GoProjectTemplate } from "react-icons/go";
-import { MdDelete } from "react-icons/md";
-import { MdEdit } from "react-icons/md";
 import { FaPlusCircle } from "react-icons/fa";
+import { GoProjectTemplate } from "react-icons/go";
+import { MdDelete, MdEdit } from "react-icons/md";
+import NavBar from "../components/projects/NavBar";
 
 function page() {
     
   return (
     <>
         <div className='textured-bg min-h-screen w-full flex flex-col'>
-            <div className='flex px-7 py-2 justify-between items-center sticky top-0 bg-gray-200 shadow-md'>
-                <span className='flex items-center justify-center space-x-1 text-xl'>
-                    <Link href="/">
-                        <Image src="/CodeNull.png" height={45} width={45} alt='CodeNull'/>
-                    </Link>
-                    <span>/</span>
-                    <span>Projects</span>    
-                </span>
-                <span>
-                    <Image src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" 
-                        height={45} width={45} alt='' className='rounded-[50%]'/>
-                </span>
-            </div>
+            <NavBar project={undefined}/>
             <hr className='bg-gray-300 h-[1px]'/>
             <div className='w-full flex justify-end px-5 pt-3'>
-                <button className='px-5 py-2 bg-sky-500 flex items-center space-x-2 rounded-md'>
+                <button className='px-5 py-2 bg-[#7551dc] flex items-center space-x-2 rounded-md'>
                     <FaPlusCircle size={20} color='white'/>
                     <span className='text-white'>New</span>
                 </button>
