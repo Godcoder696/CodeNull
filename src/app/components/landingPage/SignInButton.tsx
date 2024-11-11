@@ -32,7 +32,7 @@ function SignInButton() {
         onClick={async ()=>{
           await signIn()
         }}
-        className='bg-white text-[#7551dc] px-4 py-1 rounded-2xl shadow-md hover:shadow-none'>
+        className='bg-[#7551dc] text-white px-5 py-2 rounded-xl font-semibold hover:scale-105 duration-200'>
         Login
       </button>  
     </>

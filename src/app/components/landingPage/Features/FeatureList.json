@@ -1,0 +1,32 @@
+[
+  {
+    "id" : 1,
+    "name" : "Full Stack App",
+    "desc" : "",
+    "image" : "/Features/fullstack.jpg"
+  },
+  {
+    "id" : 2,
+    "name" : "Customization",
+    "desc" : "",
+    "image" : "/Features/customization.jpg"
+  },
+  {
+    "id" : 3,
+    "name" : "Learning Curve",
+    "desc" : "",
+    "image" : "/Features/learningcurve.jpg"
+  },
+  {
+    "id" : 4,
+    "name" : "Compatibility",
+    "desc" : "",
+    "image" : "/Features/compatibility.jpg"
+  },
+  {
+    "id" : 5,
+    "name" : "AI Support",
+    "desc" : "",
+    "image" : "/Features/fullstack.jpg"
+  }
+]
