@@ -1,30 +1,22 @@
-import Image from 'next/image'
-import Link from 'next/link'
-import React from 'react'
+import { FaPlusCircle } from "react-icons/fa";
 import { GoProjectTemplate } from "react-icons/go";
-import { MdDelete } from "react-icons/md";
-import { MdEdit } from "react-icons/md";
+import { MdDelete, MdEdit } from "react-icons/md";
+import NavBar from "../components/projects/NavBar";
 
 function page() {
     
   return (
     <>
         <div className='textured-bg min-h-screen w-full flex flex-col'>
-            <div className='flex px-7 py-2 justify-between items-center sticky top-0 bg-gray-200 shadow-md'>
-                <span className='flex items-center justify-center space-x-1 text-xl'>
-                    <Link href="/">
-                        <Image src="/CodeNull.png" height={45} width={45} alt='CodeNull'/>
-                    </Link>
-                    <span>/</span>
-                    <span>Projects</span>    
-                </span>
-                <span>
-                    <Image src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" 
-                        height={45} width={45} alt='' className='rounded-[50%]'/>
-                </span>
-            </div>
+            <NavBar project={undefined}/>
             <hr className='bg-gray-300 h-[1px]'/>
-            <div className='px-7 py-2 mt-4 grid grid-cols-2 sm:grid-cols-4 xl:grid-cols-4 gap-10 '>
+            <div className='w-full flex justify-end px-5 pt-3'>
+                <button className='px-5 py-2 bg-[#7551dc] flex items-center space-x-2 rounded-md'>
+                    <FaPlusCircle size={20} color='white'/>
+                    <span className='text-white'>New</span>
+                </button>
+            </div>
+            <div className='px-7 py-2 mt-2 grid grid-cols-2 sm:grid-cols-4 xl:grid-cols-4 gap-10 '>
                 <div className='border-gray-300 border-2 p-3 rounded-md  flex flex-col space-y-3 bg-[#f0f0f0]'>
                     <div className='flex space-x-2 items-center'>
                         <GoProjectTemplate size={25}/>

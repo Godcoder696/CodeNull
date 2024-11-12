@@ -4,9 +4,9 @@ import data from "../Features/FeatureList.json";
 function Feature() {
   return (
     <>
-      {data.map((item) => (
+      {data.map((item, index) => (
         item.id % 2 == 1 ? 
-        <div className="flex justify-around">
+        <div className="flex justify-around" key={index}>
           <img src={item.image} alt=" 1223" className="h-44"/>
           <div className="max-w-[50%] flex flex-col items-start justify-center">
             <div className="font-semibold text-2xl">{item.name}</div>
@@ -19,7 +19,7 @@ function Feature() {
           </div>
         </div>
         :
-        <div className="flex justify-around">
+        <div className="flex justify-around" key={index}>
           <div className="max-w-[50%] flex flex-col items-start justify-center">
             <div className="font-semibold text-2xl">{item.name}</div>
             <div>
