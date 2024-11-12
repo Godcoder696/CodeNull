@@ -2,6 +2,7 @@ import { FaPlusCircle } from "react-icons/fa";
 import { GoProjectTemplate } from "react-icons/go";
 import { MdDelete, MdEdit } from "react-icons/md";
 import NavBar from "../components/projects/NavBar";
+import Link from "next/link";
 
 function page() {
     
@@ -11,10 +12,12 @@ function page() {
             <NavBar project={undefined}/>
             <hr className='bg-gray-300 h-[1px]'/>
             <div className='w-full flex justify-end px-5 pt-3'>
-                <button className='px-5 py-2 bg-[#7551dc] flex items-center space-x-2 rounded-md'>
-                    <FaPlusCircle size={20} color='white'/>
-                    <span className='text-white'>New</span>
-                </button>
+                <Link href="/projects/new-project">
+                    <button className='px-5 py-2 bg-[#7551dc] flex items-center space-x-2 rounded-md'>
+                        <FaPlusCircle size={20} color='white'/>
+                        <span className='text-white'>New</span>
+                    </button>
+                </Link>
             </div>
             <div className='px-7 py-2 mt-2 grid grid-cols-2 sm:grid-cols-4 xl:grid-cols-4 gap-10 '>
                 <div className='border-gray-300 border-2 p-3 rounded-md  flex flex-col space-y-3 bg-[#f0f0f0]'>
