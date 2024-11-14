@@ -38,8 +38,8 @@ function Page({params}) {
               <div className='bg-black w-2/6 h-full p-3 text-white'>
                 <textarea className='h-full w-full bg-transparent p-1' value={input} onChange={(e)=>{
                   setInput(e.target.value);
-                  let output= document.getElementById("output");
-                  output.contentDocument.body.innerHTML= input;
+                  const output: any= document.getElementById("output");
+                  if(output) output.contentDocument.body.innerHTML= input;
                 }}/>
               </div>
             </div>
