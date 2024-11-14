@@ -2,7 +2,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 
-function NavBar({project}) {
+function NavBar({project}:{project:any}) {
     
   return (
     <>

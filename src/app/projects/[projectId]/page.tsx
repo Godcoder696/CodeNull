@@ -8,7 +8,7 @@ import { CiDesktop } from "react-icons/ci";
 import { BsTabletLandscape } from "react-icons/bs";
 import { CiMobile1 } from "react-icons/ci";
 
-function Page({params}) {
+function Page({params}:{params:any}) {
   const [input, setInput]= useState('');
   return (
     <>
